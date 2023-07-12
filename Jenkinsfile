@@ -8,12 +8,17 @@ pipeline {
         }
         stage("test"){
           steps{
-            echo 'Contruye la aplicacion'
+            echo 'Testear la aplicacion'
           }
         }
         stage("deploy"){
           steps{
-            echo 'Contruye la aplicacion'
+            echo 'Desplegare la aplicacion'
+          }
+        }
+       stage("Finalizar"){
+          steps{
+            echo 'Finalizare la aplicacion'
           }
         }
     }
